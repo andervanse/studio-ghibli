@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import { Movies } from './features/movies/Movies';
-import { People } from './features/people/People';
 import Menu from './components/Menu';
 import Home from './components/Home/HomePage';
 import About from './components/About/AboutPage';
@@ -15,10 +14,16 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home/>} />
           <Route path="/movies" element={<Movies/>} />
-          <Route path="/people" element={<People/>} />
           <Route path="/about" element={<About/>}/>
         </Routes>
       </Router>
+      <footer className="footer">
+        <div className="content has-text-centered">
+          <p>
+            <a href="https://ghibliapi.herokuapp.com/">Studio Ghibli API</a>
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

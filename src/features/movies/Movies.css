@@ -1,0 +1,24 @@
+
+.card-margin {
+    margin: 5%;
+}
+div.media-content {
+    margin: 15px;
+}
+div.card-image {
+    margin: 4%;
+}
+.image {
+    margin:auto;
+    max-width: 90%;
+}
+
+
+@media screen and (max-width: 720px) {
+    .card {
+        margin: 5%;
+    }
+    .image {
+        max-width: 90%;
+    }
+}
